@@ -11,12 +11,21 @@ import { Background, Flex } from '@/once-ui/components'
 
 import { Inter } from 'next/font/google'
 import { Roboto_Mono } from 'next/font/google';
+import { Raleway } from 'next/font/google';
+import { Sora } from 'next/font/google';
 
-const primary = Inter({
-	variable: '--font-primary',
-	subsets: ['latin'],
-	display: 'swap',
-})
+const primary = Raleway({
+    variable: '--font-primary',
+    subsets: ['latin'],
+    display: 'swap'
+});
+
+const secondary = Sora({
+    variable: '--font-secondary',
+    subsets: ['latin'],
+    display: 'swap'
+});
+
 
 const code = Roboto_Mono({
 	variable: '--font-code',
@@ -32,8 +41,6 @@ type FontConfig = {
 	Replace with code for secondary and tertiary fonts
 	from https://once-ui.com/customize
 */
-const secondary: FontConfig | undefined = undefined;
-const tertiary: FontConfig | undefined = undefined;
 /*
 */
 
@@ -86,15 +93,15 @@ export default function RootLayout({
 		<Flex
 			as="html" lang="en"
 			fillHeight background="page"
-			data-neutral={style.neutral} data-brand={style.brand} data-accent={style.accent}
-			data-border={style.border} data-theme={style.theme}
-			data-solid={style.solid} data-solid-style={style.solidStyle}
-			data-surface={style.surface} data-transition={style.transition}
+			data-neutral="slate" data-brand="violet" data-accent="violet"
+			data-border="playful" data-theme="dark"
+			data-solid="contrast" data-solid-style="flat"
+			data-surface="translucent" data-transition="all"
 			data-scaling={style.scaling}
 			className={classNames(
 				primary.variable, code.variable,
 				secondary ? secondary.variable : '',
-				tertiary ? tertiary.variable : ''
+				//tertiary ? tertiary.variable : '' // mrbogdan: ce dq e asta coaie
 			)}>
 			<head>
 				<script

@@ -9,18 +9,18 @@ export default function Home() {
 	const links = [
 		{
 			href: "https://once-ui.com/docs/theming",
-			title: "Themes",
-			description: "Style your app in minutes.",
+			title: "Discord",
+			description: "Get in touch with me or just say hi =D",
 		},
 		{
 			href: "https://once-ui.com/docs/flexComponent",
-			title: "Layout",
-			description: "Build responsive layouts.",
+			title: "Github",
+			description: "See the latest projects.",
 		},
 		{
 			href: "https://once-ui.com/docs/typography",
-			title: "Typography",
-			description: "Scale text automatically.",
+			title: "YouTube",
+			description: "",
 		},
 	];
 
@@ -55,7 +55,7 @@ export default function Home() {
 									width: 'fit-content',
 									padding: 'var(--static-space-8) var(--static-space-16)',
 									backdropFilter: 'blur(var(--static-space-1))'}}>
-								Start by editing <span className="brand-on-background-medium">app/page.tsx</span>
+								mrbogdan <span className="brand-on-background-medium">/ whoisbogdann</span>
 							</InlineCode>
 							<Heading
 								wrap="balance"
@@ -63,16 +63,16 @@ export default function Home() {
 								<span className="font-code">
 									<LetterFx
 										trigger="instant">
-										Server Setup & Configuration Specialist
+										Server & Configuration Specialist (Minecraft)
 									</LetterFx>
 								</span>
 							</Heading>
 							<Button
 								id="readDocs"
-								href="https://once-ui.com/docs"
+								href="https://dsc.gg/mrbogdan"
 								variant="secondary">
 								<Flex alignItems="center">
-									Read docs
+									Get in touch!
 									<Arrow trigger="#readDocs"/>
 								</Flex>
 							</Button>
