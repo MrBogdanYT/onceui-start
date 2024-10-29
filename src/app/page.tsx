@@ -4,6 +4,7 @@ import React from 'react';
 
 import { Heading, Text, Flex, Button, Grid, Icon, InlineCode, Logo, Background, LetterFx, Arrow } from '@/once-ui/components';
 import Link from 'next/link';
+// import styles from './Avatar.module.scss';
 
 export default function Home() {
 	const links = [
@@ -43,7 +44,7 @@ export default function Home() {
 						<Flex
 							position="relative"
 							flex={2} paddingTop="56" paddingX="xl">
-							<Logo size="xl" icon={false} style={{zIndex: '1'}}/>
+							<Logo size="xl" icon={false} style={{zIndex: '1'}} href="/" />
 						</Flex>
 						<Flex
 							position="relative"
@@ -121,7 +122,7 @@ export default function Home() {
 				justifyContent="space-between">
 				<Text
 					variant="body-default-s" onBackground="neutral-weak">
-					© 2024 Once UI & whoisbogdann, <Link href="https://github.com/once-ui-system/nextjs-starter?tab=MIT-1-ov-file">MIT License</Link>
+					© 2024 Powered by mrbogdan management & <Link href="https://github.com/once-ui-system/nextjs-starter?tab=MIT-1-ov-file">Once UI</Link>
 				</Text>
 				<Flex
 					gap="12">
@@ -131,7 +132,7 @@ export default function Home() {
 						GitHub
 					</Button>
 					<Button
-						href="https://discord.com/invite/5EyAQ4eNdS"
+						href="https://dsc.gg/mrbogdan"
 						prefixIcon="discord" size="s" variant="tertiary">
 						Discord
 					</Button>
