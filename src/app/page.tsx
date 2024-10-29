@@ -41,11 +41,11 @@ export default function Home() {
 					<Flex
 						mobileDirection="column"
 						fillWidth gap="24">
-						<Flex
+						{/* <Flex
 							position="relative"
 							flex={2} paddingTop="56" paddingX="xl">
 							<Logo size="xl" icon={false} style={{zIndex: '1'}} href="/" />
-						</Flex>
+						</Flex> */}
 						<Flex
 							position="relative"
 							flex={4} gap="24" marginBottom="104"
