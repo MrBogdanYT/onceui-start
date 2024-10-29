@@ -4,7 +4,6 @@ import React from 'react';
 
 import { Heading, Text, Flex, Button, Grid, Icon, InlineCode, Logo, Background, LetterFx, Arrow } from '@/once-ui/components';
 import Link from 'next/link';
-// import styles from './Avatar.module.scss';
 
 export default function Home() {
 	const links = [
@@ -16,12 +15,12 @@ export default function Home() {
 		{
 			href: "https://once-ui.com/docs/flexComponent",
 			title: "Github",
-			description: "See the latest projects.",
+			description: "See the latest projects I'm working on.",
 		},
 		{
 			href: "https://once-ui.com/docs/typography",
-			title: "YouTube",
-			description: "",
+			title: "Portfolio",
+			description: "Check out my portfolio!",
 		},
 	];
 
@@ -41,11 +40,11 @@ export default function Home() {
 					<Flex
 						mobileDirection="column"
 						fillWidth gap="24">
-						{/* <Flex
+						<Flex
 							position="relative"
 							flex={2} paddingTop="56" paddingX="xl">
-							<Logo size="xl" icon={false} style={{zIndex: '1'}} href="/" />
-						</Flex> */}
+							<Logo size="xl" icon={false} style={{zIndex: '1'}}/>
+						</Flex>
 						<Flex
 							position="relative"
 							flex={4} gap="24" marginBottom="104"
