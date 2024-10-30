@@ -44,4 +44,9 @@ const social = {
     discord: 'https://discord.com/invite/5EyAQ4eNdS'
 }
 
+const routes = {
+    '/':        true,
+    '/portfolio':    true,
+}
+
 export { baseURL, style, meta, og, schema, social };

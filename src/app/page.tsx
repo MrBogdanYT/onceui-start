@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { Heading, Text, Flex, Button, Grid, Icon, InlineCode, Logo, Background, LetterFx, Arrow } from '@/once-ui/components';
+import { Heading, Text, Flex, Button, Grid, Icon, InlineCode, Logo, Background, LetterFx, SparkleFx, Arrow } from '@/once-ui/components';
 import Link from 'next/link';
 import styles from './Avatar.module.scss';
 
@@ -63,18 +63,25 @@ export default function Home() {
 								wrap="balance"
 								variant="display-strong-s">
 								<span className="font-code">
-									<LetterFx
+									{/* <LetterFx
 										trigger="instant">
 										Server & Configuration Specialist (Minecraft)
-									</LetterFx>
+									</LetterFx> */}
+									<SparkleFx
+  										speed="medium"
+  										count={50}
+  										trigger
+									>
+  										Server & Configuration Specialist (Minecraft)
+									</SparkleFx>
 								</span>
 							</Heading>
 							<Button
 								id="readDocs"
-								href="https://dsc.gg/mrbogdan"
+								href="/portfolio"
 								variant="secondary">
 								<Flex alignItems="center">
-									Get in touch!
+									Learn more about me =D
 									<Arrow trigger="#readDocs"/>
 								</Flex>
 							</Button>
@@ -127,11 +134,11 @@ export default function Home() {
 				</Text>
 				<Flex
 					gap="12">
-					<Button
+					{/* <Button
 						href="https://imgur.com/a/mrbogdanyts-portfolio-ScjusmI"
 						prefixIcon="check" size="s" variant="tertiary">
 						Portfolio (Outdated)
-					</Button>
+					</Button> */}
 					<Button
 						href="https://github.com/MrBogdanYT"
 						prefixIcon="github" size="s" variant="tertiary">
