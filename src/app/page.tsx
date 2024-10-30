@@ -4,25 +4,26 @@ import React from 'react';
 
 import { Heading, Text, Flex, Button, Grid, Icon, InlineCode, Logo, Background, LetterFx, Arrow } from '@/once-ui/components';
 import Link from 'next/link';
+import styles from './Avatar.module.scss';
 
 export default function Home() {
-	const links = [
-		{
-			href: "https://once-ui.com/docs/theming",
-			title: "Discord",
-			description: "Get in touch with me or just say hi =D",
-		},
-		{
-			href: "https://once-ui.com/docs/flexComponent",
-			title: "Github",
-			description: "See the latest projects I'm working on.",
-		},
-		{
-			href: "https://once-ui.com/docs/typography",
-			title: "Portfolio",
-			description: "Check out my portfolio!",
-		},
-	];
+	// const links = [
+	// 	{
+	// 		href: "https://once-ui.com/docs/theming",
+	// 		title: "Discord",
+	// 		description: "Get in touch with me or just say hi =D",
+	// 	},
+	// 	{
+	// 		href: " ",
+	// 		title: " ",
+	// 		description: " ",
+	// 	},
+	// 	{
+	// 		href: "https://once-ui.com/docs/typography",
+	// 		title: "Portfolio",
+	// 		description: "Check out my portfolio!",
+	// 	},
+	// ];
 
 	return (
 		<Flex
@@ -42,8 +43,9 @@ export default function Home() {
 						fillWidth gap="24">
 						<Flex
 							position="relative"
-							flex={2} paddingTop="56" paddingX="xl">
-							<Logo size="xl" icon={false} style={{zIndex: '1'}}/>
+							flex={2} paddingTop="12" paddingX="xl">
+							{/* <Logo size="xl" icon={false} style={{zIndex: '1'}}/> */}
+							<img src={'./images/pfp.png'} alt="xd" />
 						</Flex>
 						<Flex
 							position="relative"
@@ -78,7 +80,7 @@ export default function Home() {
 							</Button>
 						</Flex>
 					</Flex>
-					<Grid
+					{/* <Grid
 						radius="l"
 						border="neutral-medium"
 						borderStyle="solid-1"
@@ -111,7 +113,7 @@ export default function Home() {
 								</Flex>
 							</Link>
 						))}
-					</Grid>
+					</Grid> */}
 				</Flex>
 			</Flex>
 			<Flex
@@ -121,12 +123,17 @@ export default function Home() {
 				justifyContent="space-between">
 				<Text
 					variant="body-default-s" onBackground="neutral-weak">
-					© 2024 Powered by mrbogdan management & <Link href="https://github.com/once-ui-system/nextjs-starter?tab=MIT-1-ov-file">Once UI</Link>
+					© 2024 Powered by <Link href=" ">MrBogdan Management</Link>
 				</Text>
 				<Flex
 					gap="12">
 					<Button
-						href="https://github.com/once-ui-system/nextjs-starter"
+						href="https://imgur.com/a/mrbogdanyts-portfolio-ScjusmI"
+						prefixIcon="check" size="s" variant="tertiary">
+						Portfolio (Outdated)
+					</Button>
+					<Button
+						href="https://github.com/MrBogdanYT"
 						prefixIcon="github" size="s" variant="tertiary">
 						GitHub
 					</Button>
