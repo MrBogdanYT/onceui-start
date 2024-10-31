@@ -1,4 +1,4 @@
-import { Heading, Text, Flex, Button, Grid, Icon, InlineCode, Logo, Background, LetterFx, Arrow } from '@/once-ui/components';
+import { Heading, Text, Flex, Button, Grid, Icon, InlineCode, Logo, Background, LetterFx, RevealFx, User, Arrow } from '@/once-ui/components';
 import Link from 'next/link';
 import styles from './Avatar.module.scss';
 
@@ -9,57 +9,45 @@ export default function Portfolio(
 		<Flex
 			fillWidth paddingTop="l" paddingX="l"
 			direction="column" alignItems="center" flex={1}>
-			<Flex
-				position="relative"
-				as="section" overflow="hidden"
-				fillWidth minHeight="0" maxWidth={68}
-				direction="column" alignItems="center" flex={1}>
+			<RevealFx
+  				speed="medium"
+  				delay={0}
+  				translateY={0}
+			>
+  				<Flex
+   					direction="column"
+    				padding="32"
+    				gap="12"
+  				>
+					<User
+  						name="MrBogdanYT"
+  						subline="Setup Specialist (Minecraft)"
+  						tagProps={{
+    						label: 'Tehnician',
+    						variant: 'gradient'
+  						}}
+  						avatarProps={{
+    						empty: false,
+    						src: '/images/pfp.png'
+  						}}
+					/>
+				</Flex>
 				<Flex
-					as="main"
-					direction="column" justifyContent="center"
-					fillWidth fillHeight padding="l" gap="l">
-					<Flex
-						mobileDirection="column"
-						fillWidth gap="24">
-						<Flex
-							position="relative"
-							flex={2} paddingTop="12" paddingX="xl">
-							{/* <Logo size="xl" icon={false} style={{zIndex: '1'}}/> */}
-							<img src={'./images/pfp.png'} alt="xd" />
-						</Flex>
-						<Flex
-							position="relative"
-							flex={4} gap="24" marginBottom="104"
-							direction="column">
-							<InlineCode
-								className="shadow-m"
-								style={{
-									width: 'fit-content',
-									padding: 'var(--static-space-8) var(--static-space-16)',
-									backdropFilter: 'blur(var(--static-space-1))'}}>
-								mrbogdan <span className="brand-on-background-medium">/ whoisbogdann</span>
-							</InlineCode>
-							<Heading
-								wrap="balance"
-								variant="display-strong-s">
-								<span className="font-code">
-									<LetterFx
-										trigger="instant">
-										test xd
-									</LetterFx>
-								</span>
-							</Heading>
-							<Button
-								id="readDocs"
-								href="https://dsc.gg/mrbogdan"
-								variant="secondary">
-								<Flex alignItems="center">
-									Get in touch!
-									<Arrow trigger="#readDocs"/>
-								</Flex>
-							</Button>
-						</Flex>
-					</Flex>
+   					direction="column"
+    				padding="32"
+    				gap="8"
+  				>
+					<Text variant="heading-strong-m">
+      					Special effects in v0.3.1
+    				</Text>
+    				<Text
+     					onBackground="neutral-medium"
+      					marginBottom="16"
+   					>
+      					Great news. Been waiting for this!
+    				</Text>
+  				</Flex>
+			</RevealFx>
 					{/* <Grid
 						radius="l"
 						border="neutral-medium"
@@ -94,8 +82,6 @@ export default function Portfolio(
 							</Link>
 						))}
 					</Grid> */}
-				</Flex>
-			</Flex>
 			<Flex
 				as="footer"
 				position="relative"
