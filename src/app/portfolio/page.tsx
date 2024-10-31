@@ -5,6 +5,23 @@ import styles from './Avatar.module.scss';
 export default function Portfolio(
     {params: {locale}}: { params: { locale: string }}
 ) {
+	const links = [
+		{
+			href: "https://once-ui.com/docs/theming",
+			title: "Themes",
+			description: "Style your app in minutes.",
+		},
+		{
+			href: "https://once-ui.com/docs/flexComponent",
+			title: "Layout",
+			description: "Build responsive layouts.",
+		},
+		{
+			href: "https://once-ui.com/docs/typography",
+			title: "Typography",
+			description: "Scale text automatically.",
+		},
+	];
     return (
 		<Flex
 			fillWidth paddingTop="l" paddingX="l"
@@ -37,18 +54,30 @@ export default function Portfolio(
     				padding="32"
     				gap="8"
   				>
-					<Text variant="heading-strong-m">
-      					Special effects in v0.3.1
+					<Text variant="heading-strong-l">
+      					Who is MrBogdan?
     				</Text>
-    				<Text
+    				<Text 
      					onBackground="neutral-medium"
-      					marginBottom="16"
+      					marginBottom="1"
    					>
-      					Great news. Been waiting for this!
+      					Hey! I'm an 14 year-old student from Romania. I develop stuff for Minecraft
+    				</Text>
+					<Text 
+     					onBackground="neutral-medium"
+      					marginBottom="1"
+   					>
+						Servers & worked on one of the biggest servers from my country. With over 100.000+
+    				</Text>
+					<Text 
+     					onBackground="neutral-medium"
+      					marginBottom="1"
+   					>
+						Unique Players & 200+ Online Players, we've managed to create a well established network.
     				</Text>
   				</Flex>
 			</RevealFx>
-					{/* <Grid
+					<Grid
 						radius="l"
 						border="neutral-medium"
 						borderStyle="solid-1"
@@ -63,7 +92,7 @@ export default function Portfolio(
 								key={link.href}
 								href={link.href}>
 								<Flex
-									fillWidth paddingY="8" gap="8"
+									fillWidth paddingY="12" gap="8"
 									direction="column">
 									<Flex
 										fillWidth gap="12"
@@ -81,7 +110,7 @@ export default function Portfolio(
 								</Flex>
 							</Link>
 						))}
-					</Grid> */}
+					</Grid>
 			<Flex
 				as="footer"
 				position="relative"
