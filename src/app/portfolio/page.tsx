@@ -7,19 +7,19 @@ export default function Portfolio(
 ) {
 	const links = [
 		{
-			href: "https://once-ui.com/docs/theming",
-			title: "Themes",
-			description: "Style your app in minutes.",
+			href: "https://github.com/MrBogdanYT",
+			title: "Github",
+			description: "See public work from mrbogdan.",
 		},
 		{
-			href: "https://once-ui.com/docs/flexComponent",
-			title: "Layout",
-			description: "Build responsive layouts.",
+			href: "https://namemc.com/profile/MrBogdanYT.2",
+			title: "NameMC",
+			description: "Follow me on NameMC!",
 		},
 		{
-			href: "https://once-ui.com/docs/typography",
-			title: "Typography",
-			description: "Scale text automatically.",
+			href: "https://dsc.gg/mrbogdan",
+			title: "Discord",
+			description: "Contact me on my servicing discord.",
 		},
 	];
     return (
@@ -118,7 +118,7 @@ export default function Portfolio(
 				justifyContent="space-between">
 				<Text
 					variant="body-default-s" onBackground="neutral-weak">
-					© 2024 Powered by <Link href=" ">MrBogdan Management</Link>
+					© 2024 Powered by <Link href="/">MrBogdan Management</Link>
 				</Text>
 				<Flex
 					gap="12">
